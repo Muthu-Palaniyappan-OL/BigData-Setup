@@ -17,7 +17,6 @@ hdfs namenode -format
 cd ~
 wget https://raw.githubusercontent.com/Muthu-Palaniyappan-OL/BigData-Setup/main/script.py
 wget https://raw.githubusercontent.com/Muthu-Palaniyappan-OL/BigData-Setup/main/agent1.properties
-source ~/.bashrc
 echo "export BEARER_TOKEN=<YourBearerToken>" >> ~/.bashrc
 ```
 
