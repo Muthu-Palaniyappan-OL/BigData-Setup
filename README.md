@@ -18,6 +18,10 @@ cd ~
 wget https://raw.githubusercontent.com/Muthu-Palaniyappan-OL/BigData-Setup/main/script.py
 wget https://raw.githubusercontent.com/Muthu-Palaniyappan-OL/BigData-Setup/main/agent1.properties
 echo "export BEARER_TOKEN=<YourBearerToken>" >> ~/.bashrc
+source ~/.bashrc
+ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+chmod 0600 ~/.ssh/authorized_keys
 ```
 
 ## Post Installation
