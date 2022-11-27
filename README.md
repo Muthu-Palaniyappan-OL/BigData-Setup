@@ -13,6 +13,7 @@ pip install requests
 ```sh
 curl https://raw.githubusercontent.com/Muthu-Palaniyappan-OL/BigData-Setup/main/hadoop-setup.sh | bash
 source ~/.bashrc
+hdfs namenode -format
 ```
 
 ## Post Installation
