@@ -22,6 +22,7 @@ source ~/.bashrc
 ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 chmod 0600 ~/.ssh/authorized_keys
+rm $FLUME_HOME/lib/log4j-slf4j-impl-2.18.0.jar
 ```
 
 ## Post Installation
