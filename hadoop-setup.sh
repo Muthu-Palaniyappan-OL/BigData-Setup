@@ -2,8 +2,6 @@
 
 # Staring Directory
 
-read -p "Enter Bearer Token: " BEARER_TOKEN </dev/tty
-
 if java &> /dev/null
 then
 	echo "Java exits, please remove it, we will install java 11"
