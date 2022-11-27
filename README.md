@@ -14,15 +14,16 @@ pip install requests
 curl https://raw.githubusercontent.com/Muthu-Palaniyappan-OL/BigData-Setup/main/hadoop-setup.sh | bash
 source ~/.bashrc
 hdfs namenode -format
+cd ~
+wget https://raw.githubusercontent.com/Muthu-Palaniyappan-OL/BigData-Setup/main/script.py
+wget https://raw.githubusercontent.com/Muthu-Palaniyappan-OL/BigData-Setup/main/agent1.properties
+source ~/.bashrc
+echo "export BEARER_TOKEN=<YourBearerToken>" >> ~/.bashrc
 ```
 
 ## Post Installation
 
 ```sh
-cd ~
-wget https://raw.githubusercontent.com/Muthu-Palaniyappan-OL/BigData-Setup/main/script.py
-wget https://raw.githubusercontent.com/Muthu-Palaniyappan-OL/BigData-Setup/main/agent1.properties
-source ~/.bashrc
 start-all.sh
 flume-ng agent --conf $FLUME_CONF -f agent1.conf -n agent1 -Dflume.root.logger=INFO,console
 ```
