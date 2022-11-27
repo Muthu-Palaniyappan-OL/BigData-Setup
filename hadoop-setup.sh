@@ -2,6 +2,8 @@
 
 # Staring Directory
 
+read -p "Enter Bearer Token: " BEARER_TOKEN
+
 if java &> /dev/null
 then
 	echo "Java exits, please remove it, we will install java 11"
@@ -58,6 +60,7 @@ export PATH=$JAVA_HOME/bin:\$PATH
 export PATH=$FLUME_HOME/bin:\$PATH
 export FLUME_HOME=$FLUME_HOME
 export FLUME_CONF=$FLUME_HOME/conf
+export BEARER_TOKEN=$BEARER_TOKEN
 # END OF BASHRC ADDED BY MUTHU
 # ========================================================
 EOF
