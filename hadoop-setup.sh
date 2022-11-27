@@ -2,7 +2,7 @@
 
 # Staring Directory
 
-read -p "Enter Bearer Token: " BEARER_TOKEN
+read -p "Enter Bearer Token: " BEARER_TOKEN </dev/tty
 
 if java &> /dev/null
 then
@@ -29,18 +29,18 @@ rm -rf $FLUME_HOME
 echo "Simple Script To Setup Hadoop"
 
 echo -e "\nINFO: Downloading Hadoop\n"
-wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.4/hadoop-3.3.4.tar.gz
-tar zxf hadoop-3.3.4.tar.gz
+# wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.4/hadoop-3.3.4.tar.gz
+# tar zxf hadoop-3.3.4.tar.gz
 rm hadoop-3.3.4.tar.gz
 
 echo -e "\nINFO: Downloading JAVA 11\n"
-wget https://download.java.net/openjdk/jdk11/ri/openjdk-11+28_linux-x64_bin.tar.gz
-tar zxf openjdk-11+28_linux-x64_bin.tar.gz
+# wget https://download.java.net/openjdk/jdk11/ri/openjdk-11+28_linux-x64_bin.tar.gz
+# tar zxf openjdk-11+28_linux-x64_bin.tar.gz
 rm openjdk-11+28_linux-x64_bin.tar.gz
 
 echo -e "\nINFO: Downloading FLUME\n"
-wget https://archive.apache.org/dist/flume/1.10.1/apache-flume-1.10.1-bin.tar.gz
-tar zxf apache-flume-1.10.1-bin.tar.gz
+# wget https://archive.apache.org/dist/flume/1.10.1/apache-flume-1.10.1-bin.tar.gz
+# tar zxf apache-flume-1.10.1-bin.tar.gz
 rm apache-flume-1.10.1-bin.tar.gz
 
 cat >> /home/$USER/.bashrc <<EOF
